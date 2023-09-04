@@ -1,8 +1,10 @@
 package com.chuitec.webview
 
+import android.content.Context
 import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.core.widget.ContentLoadingProgressBar
@@ -39,6 +41,7 @@ class MainActivity : AppCompatActivity() {
     //webview implementation
     private fun webViewSetup() {
         wb_webView.webViewClient = WebViewClient()
+        wb_webView.webChromeClient = WebChromeClient()
         wb_webView.apply {
             loadUrl("https://www.google.com/")
             settings.javaScriptEnabled = true
@@ -50,11 +53,9 @@ class MainActivity : AppCompatActivity() {
             override fun onPageFinished(view: WebView?, url: String?) {
                 progressBar.hide()
             }
-
             override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
                 progressBar.show()
             }
-
         }
     }
 
