@@ -2,9 +2,11 @@ A simple webview app in Kotlin
 
 *Features*
 
--Progress bar
+- Progress bar
 
--Swipe down to reload
+- Swipe down to reload
 
--Back button go back to previous opened page
+- Back button go back to previous opened page
+
+- Bottom Navigation Bar
 
