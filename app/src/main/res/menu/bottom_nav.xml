@@ -5,9 +5,9 @@
         android:id="@+id/home"
         android:icon="@drawable/baseline_home_24"/>
     <item android:title="@string/about"
-        android:id="@+id/profile"
+        android:id="@+id/about"
         android:icon="@drawable/baseline_info_24"/>
     <item android:title="@string/contact"
-        android:id="@+id/settings"
+        android:id="@+id/contact"
         android:icon="@drawable/baseline_contact_page_24"/>
 </menu>
